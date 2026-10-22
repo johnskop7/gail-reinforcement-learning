@@ -1,0 +1,1830 @@
+{
+  "source_archive": "neurofuzzy_control_semester_project.zip",
+  "excluded": "Python bytecode/cache files and editor metadata; empty directories are not included in the ZIP.",
+  "modified_scripts": [
+    "expert_policies/train.py",
+    "expert_policies/run.py",
+    "imitation_learning/train.py",
+    "imitation_learning/validation.py",
+    "imitation_learning/validation_bipedal_walker.py",
+    "imitation_learning/validation_lunar_lander.py",
+    "imitation_learning/validation_pendulum.py",
+    "expert_policies/visualize.py",
+    "imitation_learning/visualize.py"
+  ],
+  "files": [
+    {
+      "source": "expert_policies/ckpts/ac/CarRacing-v0/model_config.json",
+      "destination": "expert_policies/ckpts/ac/CarRacing-v0/model_config.json",
+      "source_sha256": "9645e26773cf90ee2787d64b3483a0c1bc43410f22aa164482d1f91900f675e1",
+      "packaged_sha256": "9645e26773cf90ee2787d64b3483a0c1bc43410f22aa164482d1f91900f675e1",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ac/MountainCar-v0/model_config.json",
+      "destination": "expert_policies/ckpts/ac/MountainCar-v0/model_config.json",
+      "source_sha256": "9645e26773cf90ee2787d64b3483a0c1bc43410f22aa164482d1f91900f675e1",
+      "packaged_sha256": "9645e26773cf90ee2787d64b3483a0c1bc43410f22aa164482d1f91900f675e1",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ac/MountainCarContinuous-v0/model_config.json",
+      "destination": "expert_policies/ckpts/ac/MountainCarContinuous-v0/model_config.json",
+      "source_sha256": "ff4d6656ab8025fdc2597f8513158d63cb7e6817577566a959a48e9b8d217506",
+      "packaged_sha256": "ff4d6656ab8025fdc2597f8513158d63cb7e6817577566a959a48e9b8d217506",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/BipedalWalker-v3/model_config.json",
+      "destination": "expert_policies/ckpts/gae/BipedalWalker-v3/model_config.json",
+      "source_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "packaged_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/BipedalWalker-v3/policy.ckpt",
+      "destination": "expert_policies/ckpts/gae/BipedalWalker-v3/policy.ckpt",
+      "source_sha256": "d3f797942be3b3a9406a7a4ac05cd8d3877251d49566898cd7c47d55f92487c8",
+      "packaged_sha256": "d3f797942be3b3a9406a7a4ac05cd8d3877251d49566898cd7c47d55f92487c8",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/BipedalWalker-v3/results.pkl",
+      "destination": "expert_policies/ckpts/gae/BipedalWalker-v3/results.pkl",
+      "source_sha256": "c870d765e2ef85193816a047b1bd7f95ab5dc4dfd5428b0fa1552f4580f14aea",
+      "packaged_sha256": "c870d765e2ef85193816a047b1bd7f95ab5dc4dfd5428b0fa1552f4580f14aea",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/BipedalWalker-v3/value.ckpt",
+      "destination": "expert_policies/ckpts/gae/BipedalWalker-v3/value.ckpt",
+      "source_sha256": "2748444a5b72f5d7045eee3a6551d86bddd880872e7a6e3d8cc3f656f20a005b",
+      "packaged_sha256": "2748444a5b72f5d7045eee3a6551d86bddd880872e7a6e3d8cc3f656f20a005b",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/CarRacing-v0/model_config.json",
+      "destination": "expert_policies/ckpts/gae/CarRacing-v0/model_config.json",
+      "source_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "packaged_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/CartPole-v1/model_config.json",
+      "destination": "expert_policies/ckpts/gae/CartPole-v1/model_config.json",
+      "source_sha256": "f49778b860bda89426522f5214221a2a89012143acbadf20972c59c03bb85ddc",
+      "packaged_sha256": "f49778b860bda89426522f5214221a2a89012143acbadf20972c59c03bb85ddc",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/CartPole-v1/policy.ckpt",
+      "destination": "expert_policies/ckpts/gae/CartPole-v1/policy.ckpt",
+      "source_sha256": "30f344dc14197af9c6b71b3692a6a3d07d0ef55beedd12896952f5f61029fc4e",
+      "packaged_sha256": "30f344dc14197af9c6b71b3692a6a3d07d0ef55beedd12896952f5f61029fc4e",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/CartPole-v1/results.pkl",
+      "destination": "expert_policies/ckpts/gae/CartPole-v1/results.pkl",
+      "source_sha256": "0b7720aeade0d5333a5a64bf25d1d1d5ac5676186e3e40f7aa4d915a4e58bd84",
+      "packaged_sha256": "0b7720aeade0d5333a5a64bf25d1d1d5ac5676186e3e40f7aa4d915a4e58bd84",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/CartPole-v1/value.ckpt",
+      "destination": "expert_policies/ckpts/gae/CartPole-v1/value.ckpt",
+      "source_sha256": "22927fbfe1af532ab9ca43e81ae5dd5aec91a2ad86abfebe032357098b651d3f",
+      "packaged_sha256": "22927fbfe1af532ab9ca43e81ae5dd5aec91a2ad86abfebe032357098b651d3f",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/LunarLander-v2/model_config.json",
+      "destination": "expert_policies/ckpts/gae/LunarLander-v2/model_config.json",
+      "source_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "packaged_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/LunarLander-v2/policy.ckpt",
+      "destination": "expert_policies/ckpts/gae/LunarLander-v2/policy.ckpt",
+      "source_sha256": "39cf8c88f3957c4cc4ae1825b8abf52a329ad2d2f8e5a0c1afab59a281fd598c",
+      "packaged_sha256": "39cf8c88f3957c4cc4ae1825b8abf52a329ad2d2f8e5a0c1afab59a281fd598c",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/LunarLander-v2/results.pkl",
+      "destination": "expert_policies/ckpts/gae/LunarLander-v2/results.pkl",
+      "source_sha256": "ca17f31eb93e3e58fd5d00a398d1bf0105f96e22018b85d925061544802c634c",
+      "packaged_sha256": "ca17f31eb93e3e58fd5d00a398d1bf0105f96e22018b85d925061544802c634c",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/LunarLander-v2/value.ckpt",
+      "destination": "expert_policies/ckpts/gae/LunarLander-v2/value.ckpt",
+      "source_sha256": "ad885b2fe55fee1bbf20849db6d6a717dd2deeebb8f3d7e425471e2616af96f4",
+      "packaged_sha256": "ad885b2fe55fee1bbf20849db6d6a717dd2deeebb8f3d7e425471e2616af96f4",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/MountainCar-v0/model_config.json",
+      "destination": "expert_policies/ckpts/gae/MountainCar-v0/model_config.json",
+      "source_sha256": "1d90efd06c7c65c09a7c93cd31220f5062fd550e7aaff7266468e2fd014556da",
+      "packaged_sha256": "1d90efd06c7c65c09a7c93cd31220f5062fd550e7aaff7266468e2fd014556da",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/MountainCarContinuous-v0/model_config.json",
+      "destination": "expert_policies/ckpts/gae/MountainCarContinuous-v0/model_config.json",
+      "source_sha256": "1d90efd06c7c65c09a7c93cd31220f5062fd550e7aaff7266468e2fd014556da",
+      "packaged_sha256": "1d90efd06c7c65c09a7c93cd31220f5062fd550e7aaff7266468e2fd014556da",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/Pendulum-v0/model_config.json",
+      "destination": "expert_policies/ckpts/gae/Pendulum-v0/model_config.json",
+      "source_sha256": "9bfa28e4f4bc93dae402c6cdfe376de168eadf1437ca4ef7c5763903f7adb7b0",
+      "packaged_sha256": "9bfa28e4f4bc93dae402c6cdfe376de168eadf1437ca4ef7c5763903f7adb7b0",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/Pendulum-v0/policy.ckpt",
+      "destination": "expert_policies/ckpts/gae/Pendulum-v0/policy.ckpt",
+      "source_sha256": "4d6bcdb979d3070bfe96c07779de5808df6712c5be0485fc5a1a64730af3e0f4",
+      "packaged_sha256": "4d6bcdb979d3070bfe96c07779de5808df6712c5be0485fc5a1a64730af3e0f4",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/Pendulum-v0/results.pkl",
+      "destination": "expert_policies/ckpts/gae/Pendulum-v0/results.pkl",
+      "source_sha256": "c7e58d8ca50df19404fdc6132b71d010482f988faafa625d211cf16e8e3413d4",
+      "packaged_sha256": "c7e58d8ca50df19404fdc6132b71d010482f988faafa625d211cf16e8e3413d4",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/gae/Pendulum-v0/value.ckpt",
+      "destination": "expert_policies/ckpts/gae/Pendulum-v0/value.ckpt",
+      "source_sha256": "a6e7f9167eb48333c957b3857662294837b8ba70106ece26b9dff914dc8e4a92",
+      "packaged_sha256": "a6e7f9167eb48333c957b3857662294837b8ba70106ece26b9dff914dc8e4a92",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/pg/MountainCar-v0/model_config.json",
+      "destination": "expert_policies/ckpts/pg/MountainCar-v0/model_config.json",
+      "source_sha256": "e68ae318258a6653927325b39f7c802b93ca34a43236ffb7a419cdbc6d6d53a5",
+      "packaged_sha256": "e68ae318258a6653927325b39f7c802b93ca34a43236ffb7a419cdbc6d6d53a5",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/pg/MountainCarContinuous-v0/model_config.json",
+      "destination": "expert_policies/ckpts/pg/MountainCarContinuous-v0/model_config.json",
+      "source_sha256": "3559212eba9dfbb0b307fc3ed9909dd26137f30377ccbb0637b8c460f09b30b0",
+      "packaged_sha256": "3559212eba9dfbb0b307fc3ed9909dd26137f30377ccbb0637b8c460f09b30b0",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/pg/MountainCarContinuous-v0/policy.ckpt",
+      "destination": "expert_policies/ckpts/pg/MountainCarContinuous-v0/policy.ckpt",
+      "source_sha256": "128ce2b82cfcf0e8e883c923a11eaabac64d19fbf3cb27187dd5613257cf96bb",
+      "packaged_sha256": "128ce2b82cfcf0e8e883c923a11eaabac64d19fbf3cb27187dd5613257cf96bb",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/pg/MountainCarContinuous-v0/results.pkl",
+      "destination": "expert_policies/ckpts/pg/MountainCarContinuous-v0/results.pkl",
+      "source_sha256": "2c1acd6ec4058aeba639263c7eaceb072f8357a6cf3d1b1eec834c019839100f",
+      "packaged_sha256": "2c1acd6ec4058aeba639263c7eaceb072f8357a6cf3d1b1eec834c019839100f",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/pg/MountainCarContinuous-v0/value.ckpt",
+      "destination": "expert_policies/ckpts/pg/MountainCarContinuous-v0/value.ckpt",
+      "source_sha256": "ba58613d5c896a37344b022900fb23e7c291a1e0283b6984a9d81c5e6327e11e",
+      "packaged_sha256": "ba58613d5c896a37344b022900fb23e7c291a1e0283b6984a9d81c5e6327e11e",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/Acrobot-v1/model_config.json",
+      "destination": "expert_policies/ckpts/ppo/Acrobot-v1/model_config.json",
+      "source_sha256": "f5fe20d94ad2774fb440433ed10bc326e87603325e3e65c0805ee3c7657e07ac",
+      "packaged_sha256": "f5fe20d94ad2774fb440433ed10bc326e87603325e3e65c0805ee3c7657e07ac",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/Acrobot-v1/policy.ckpt",
+      "destination": "expert_policies/ckpts/ppo/Acrobot-v1/policy.ckpt",
+      "source_sha256": "b601a5c92e9345012406673e8b396cf7354ca01e6c76c591b7875eeb8f351e64",
+      "packaged_sha256": "b601a5c92e9345012406673e8b396cf7354ca01e6c76c591b7875eeb8f351e64",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/Acrobot-v1/results.pkl",
+      "destination": "expert_policies/ckpts/ppo/Acrobot-v1/results.pkl",
+      "source_sha256": "1ff3644ac0d4ec465a35fe8f65ae3de594bc9b8a48ae143c6f616590b2665e7e",
+      "packaged_sha256": "1ff3644ac0d4ec465a35fe8f65ae3de594bc9b8a48ae143c6f616590b2665e7e",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/Acrobot-v1/value.ckpt",
+      "destination": "expert_policies/ckpts/ppo/Acrobot-v1/value.ckpt",
+      "source_sha256": "2beb53995f1456022138c3f9452905fa1c7f15fcf16b7b4120af88660e278bfa",
+      "packaged_sha256": "2beb53995f1456022138c3f9452905fa1c7f15fcf16b7b4120af88660e278bfa",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/BipedalWalker-v3/model_config.json",
+      "destination": "expert_policies/ckpts/ppo/BipedalWalker-v3/model_config.json",
+      "source_sha256": "4c3189665dec0919a8f6500d4c66bf83cf9d3bc5c89dddfd6395869eec1a35d4",
+      "packaged_sha256": "4c3189665dec0919a8f6500d4c66bf83cf9d3bc5c89dddfd6395869eec1a35d4",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/BipedalWalker-v3/policy.ckpt",
+      "destination": "expert_policies/ckpts/ppo/BipedalWalker-v3/policy.ckpt",
+      "source_sha256": "535499ad7788b552d9a612c04e8eef63c35cc114d20c7a28039f6fe52978d70a",
+      "packaged_sha256": "535499ad7788b552d9a612c04e8eef63c35cc114d20c7a28039f6fe52978d70a",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/BipedalWalker-v3/results.pkl",
+      "destination": "expert_policies/ckpts/ppo/BipedalWalker-v3/results.pkl",
+      "source_sha256": "656ed6b97749ccfd2fc73d74bbf9a4a1cbf7828f7da3f9ab264d71184bf4914c",
+      "packaged_sha256": "656ed6b97749ccfd2fc73d74bbf9a4a1cbf7828f7da3f9ab264d71184bf4914c",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/BipedalWalker-v3/value.ckpt",
+      "destination": "expert_policies/ckpts/ppo/BipedalWalker-v3/value.ckpt",
+      "source_sha256": "34355491db09bb0a458a4022fbd89e88adaf2d5213703e3c5692afc95d03a44b",
+      "packaged_sha256": "34355491db09bb0a458a4022fbd89e88adaf2d5213703e3c5692afc95d03a44b",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/CarRacing-v0/model_config.json",
+      "destination": "expert_policies/ckpts/ppo/CarRacing-v0/model_config.json",
+      "source_sha256": "99fb71ad0b2c5e3a01ea404ba1b2e384ce4dc9ab2d3e4565085ae85cf5992ad9",
+      "packaged_sha256": "99fb71ad0b2c5e3a01ea404ba1b2e384ce4dc9ab2d3e4565085ae85cf5992ad9",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/CartPole-v1/model_config.json",
+      "destination": "expert_policies/ckpts/ppo/CartPole-v1/model_config.json",
+      "source_sha256": "fbb79df8109e5045aa590a361d34e24694cf53bf2b0a11bb6534915b4c44c7db",
+      "packaged_sha256": "fbb79df8109e5045aa590a361d34e24694cf53bf2b0a11bb6534915b4c44c7db",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/CartPole-v1/policy.ckpt",
+      "destination": "expert_policies/ckpts/ppo/CartPole-v1/policy.ckpt",
+      "source_sha256": "ff1c8ad188cccbce03fb2c4e5d2a3309a631de78322a56cbe0e708d0dcd01675",
+      "packaged_sha256": "ff1c8ad188cccbce03fb2c4e5d2a3309a631de78322a56cbe0e708d0dcd01675",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/CartPole-v1/results.pkl",
+      "destination": "expert_policies/ckpts/ppo/CartPole-v1/results.pkl",
+      "source_sha256": "e20a172bc604fce104897775504b8727612922a74dc461f91ee1a3337749f5cd",
+      "packaged_sha256": "e20a172bc604fce104897775504b8727612922a74dc461f91ee1a3337749f5cd",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/CartPole-v1/value.ckpt",
+      "destination": "expert_policies/ckpts/ppo/CartPole-v1/value.ckpt",
+      "source_sha256": "8178d7a04772221dee92d9867d228467b72ccc32790a4e0246c898196b1eea1d",
+      "packaged_sha256": "8178d7a04772221dee92d9867d228467b72ccc32790a4e0246c898196b1eea1d",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/FrozenLake-v0/model_config.json",
+      "destination": "expert_policies/ckpts/ppo/FrozenLake-v0/model_config.json",
+      "source_sha256": "99fb71ad0b2c5e3a01ea404ba1b2e384ce4dc9ab2d3e4565085ae85cf5992ad9",
+      "packaged_sha256": "99fb71ad0b2c5e3a01ea404ba1b2e384ce4dc9ab2d3e4565085ae85cf5992ad9",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/LunarLander-v2/model_config.json",
+      "destination": "expert_policies/ckpts/ppo/LunarLander-v2/model_config.json",
+      "source_sha256": "4c3189665dec0919a8f6500d4c66bf83cf9d3bc5c89dddfd6395869eec1a35d4",
+      "packaged_sha256": "4c3189665dec0919a8f6500d4c66bf83cf9d3bc5c89dddfd6395869eec1a35d4",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/LunarLander-v2/policy.ckpt",
+      "destination": "expert_policies/ckpts/ppo/LunarLander-v2/policy.ckpt",
+      "source_sha256": "e8a6c4f9c3131006f16dee8ae486da62d49cd5a6419bec8712d4caf7d08820a5",
+      "packaged_sha256": "e8a6c4f9c3131006f16dee8ae486da62d49cd5a6419bec8712d4caf7d08820a5",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/LunarLander-v2/results.pkl",
+      "destination": "expert_policies/ckpts/ppo/LunarLander-v2/results.pkl",
+      "source_sha256": "faa99212d9290f2b36e1d24e9427c51010e7cd829d677d60e69ebc573ac16853",
+      "packaged_sha256": "faa99212d9290f2b36e1d24e9427c51010e7cd829d677d60e69ebc573ac16853",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/LunarLander-v2/value.ckpt",
+      "destination": "expert_policies/ckpts/ppo/LunarLander-v2/value.ckpt",
+      "source_sha256": "c897eb30aa55e319882fff912d047452ecf1e92b157ded5b3f506ae4b3421d32",
+      "packaged_sha256": "c897eb30aa55e319882fff912d047452ecf1e92b157ded5b3f506ae4b3421d32",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/MountainCar-v0/model_config.json",
+      "destination": "expert_policies/ckpts/ppo/MountainCar-v0/model_config.json",
+      "source_sha256": "fbb79df8109e5045aa590a361d34e24694cf53bf2b0a11bb6534915b4c44c7db",
+      "packaged_sha256": "fbb79df8109e5045aa590a361d34e24694cf53bf2b0a11bb6534915b4c44c7db",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/Pendulum-v0/model_config.json",
+      "destination": "expert_policies/ckpts/ppo/Pendulum-v0/model_config.json",
+      "source_sha256": "e99cc6f4a5aaebb94582bbe8da96cff2f164ae6313d8e474b6ace4f6b0e7186f",
+      "packaged_sha256": "e99cc6f4a5aaebb94582bbe8da96cff2f164ae6313d8e474b6ace4f6b0e7186f",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/Pendulum-v0/policy.ckpt",
+      "destination": "expert_policies/ckpts/ppo/Pendulum-v0/policy.ckpt",
+      "source_sha256": "bcb1755c42ceacdf85035b36b59361029500de8876d6bb02e1e897d07bebda4e",
+      "packaged_sha256": "bcb1755c42ceacdf85035b36b59361029500de8876d6bb02e1e897d07bebda4e",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/Pendulum-v0/results.pkl",
+      "destination": "expert_policies/ckpts/ppo/Pendulum-v0/results.pkl",
+      "source_sha256": "35307e57f7af9ee78965a97051ba4cfdb994e033beacc7ec2ecbcfc636819595",
+      "packaged_sha256": "35307e57f7af9ee78965a97051ba4cfdb994e033beacc7ec2ecbcfc636819595",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/ppo/Pendulum-v0/value.ckpt",
+      "destination": "expert_policies/ckpts/ppo/Pendulum-v0/value.ckpt",
+      "source_sha256": "d4109c1fcc44a441067077a64a4ddc234c7aa12227f417e1dee031e02f7d1b69",
+      "packaged_sha256": "d4109c1fcc44a441067077a64a4ddc234c7aa12227f417e1dee031e02f7d1b69",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/qlearning/FrozenLake-v0/model_config.json",
+      "destination": "expert_policies/ckpts/qlearning/FrozenLake-v0/model_config.json",
+      "source_sha256": "821b90e67488ead7d97daf3048007f04d6323fb4eef47c165fd348068b5df9e8",
+      "packaged_sha256": "821b90e67488ead7d97daf3048007f04d6323fb4eef47c165fd348068b5df9e8",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/qlearning/FrozenLake-v0/q_table.ckpt",
+      "destination": "expert_policies/ckpts/qlearning/FrozenLake-v0/q_table.ckpt",
+      "source_sha256": "eaa20672d2ab74ce9096970abe2bc794388676753b0c7928250b3dd5c4f975d7",
+      "packaged_sha256": "eaa20672d2ab74ce9096970abe2bc794388676753b0c7928250b3dd5c4f975d7",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/qlearning/FrozenLake-v0/q_table.npy",
+      "destination": "expert_policies/ckpts/qlearning/FrozenLake-v0/q_table.npy",
+      "source_sha256": "2d5444c194c7130812cbb8f08b37e9ae55f5c57da3cfdc2682ecde4af3b43ff0",
+      "packaged_sha256": "2d5444c194c7130812cbb8f08b37e9ae55f5c57da3cfdc2682ecde4af3b43ff0",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/qlearning/FrozenLake-v0/results.pkl",
+      "destination": "expert_policies/ckpts/qlearning/FrozenLake-v0/results.pkl",
+      "source_sha256": "3ed15ef404258677cd0f3046946c16049b11b05d2e0d805f3ba160cd6fd0d50f",
+      "packaged_sha256": "3ed15ef404258677cd0f3046946c16049b11b05d2e0d805f3ba160cd6fd0d50f",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/Acrobot-v1/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/Acrobot-v1/model_config.json",
+      "source_sha256": "187666ffd89f0bcf351a678934acd399868c6d2bf03a753e92a6529ef4eb1590",
+      "packaged_sha256": "187666ffd89f0bcf351a678934acd399868c6d2bf03a753e92a6529ef4eb1590",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/Acrobot-v1/policy.ckpt",
+      "destination": "expert_policies/ckpts/trpo/Acrobot-v1/policy.ckpt",
+      "source_sha256": "1eb1b61cf7c92f5a721228570f0173e4ccfb1838dbe8e6b3fde074c5880b705e",
+      "packaged_sha256": "1eb1b61cf7c92f5a721228570f0173e4ccfb1838dbe8e6b3fde074c5880b705e",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/Acrobot-v1/results.pkl",
+      "destination": "expert_policies/ckpts/trpo/Acrobot-v1/results.pkl",
+      "source_sha256": "3a4d9271cbf37714e26c2911fc4c1a37ee200e3973d81a40e0f96d770395e50b",
+      "packaged_sha256": "3a4d9271cbf37714e26c2911fc4c1a37ee200e3973d81a40e0f96d770395e50b",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/Acrobot-v1/value.ckpt",
+      "destination": "expert_policies/ckpts/trpo/Acrobot-v1/value.ckpt",
+      "source_sha256": "79ec3b88cf3f3f8609e3d983e4544cdcf7c90287092f50005c8819d858d96233",
+      "packaged_sha256": "79ec3b88cf3f3f8609e3d983e4544cdcf7c90287092f50005c8819d858d96233",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/BipedalWalker-v3/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/BipedalWalker-v3/model_config.json",
+      "source_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "packaged_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/BipedalWalker-v3/policy.ckpt",
+      "destination": "expert_policies/ckpts/trpo/BipedalWalker-v3/policy.ckpt",
+      "source_sha256": "ec64bd299b958abc5d198da87e6de53b2ebc3a259396e3a4240161921dba27e6",
+      "packaged_sha256": "ec64bd299b958abc5d198da87e6de53b2ebc3a259396e3a4240161921dba27e6",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/BipedalWalker-v3/results.pkl",
+      "destination": "expert_policies/ckpts/trpo/BipedalWalker-v3/results.pkl",
+      "source_sha256": "4360a19c51fc05b7a84675e8259fdb04ae1eac4aa9e5ce31f1440b81e53dedc4",
+      "packaged_sha256": "4360a19c51fc05b7a84675e8259fdb04ae1eac4aa9e5ce31f1440b81e53dedc4",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/BipedalWalker-v3/value.ckpt",
+      "destination": "expert_policies/ckpts/trpo/BipedalWalker-v3/value.ckpt",
+      "source_sha256": "3c948589f7afc9b7447c3ec39b75515fd85d9a32428f2255daeb41765edef285",
+      "packaged_sha256": "3c948589f7afc9b7447c3ec39b75515fd85d9a32428f2255daeb41765edef285",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/CarRacing-v0/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/CarRacing-v0/model_config.json",
+      "source_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "packaged_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/CarRacing-v3/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/CarRacing-v3/model_config.json",
+      "source_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "packaged_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/CartPole-v1/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/CartPole-v1/model_config.json",
+      "source_sha256": "f37fbd0799f1ad7a05f75d12dee7795dde263dfad86b0f4f287a9d42517dd119",
+      "packaged_sha256": "f37fbd0799f1ad7a05f75d12dee7795dde263dfad86b0f4f287a9d42517dd119",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/CartPole-v1/policy.ckpt",
+      "destination": "expert_policies/ckpts/trpo/CartPole-v1/policy.ckpt",
+      "source_sha256": "cb26655bc6a8fe361245b39545f995724247f7d9b135a23fe94687f3b7673f0f",
+      "packaged_sha256": "cb26655bc6a8fe361245b39545f995724247f7d9b135a23fe94687f3b7673f0f",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/CartPole-v1/results.pkl",
+      "destination": "expert_policies/ckpts/trpo/CartPole-v1/results.pkl",
+      "source_sha256": "15bdc63cdff367f2db90d85ddefd6224f14f7365f80f6d01eab71af2759d6f3f",
+      "packaged_sha256": "15bdc63cdff367f2db90d85ddefd6224f14f7365f80f6d01eab71af2759d6f3f",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/CartPole-v1/value.ckpt",
+      "destination": "expert_policies/ckpts/trpo/CartPole-v1/value.ckpt",
+      "source_sha256": "7650d84daaff505ec4566265215129fd61619f9a4040dee51c7f12bcf6d8da79",
+      "packaged_sha256": "7650d84daaff505ec4566265215129fd61619f9a4040dee51c7f12bcf6d8da79",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/FrozenLake-v0/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/FrozenLake-v0/model_config.json",
+      "source_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "packaged_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/FrozenLake-v1/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/FrozenLake-v1/model_config.json",
+      "source_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "packaged_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/Hopper-v3/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/Hopper-v3/model_config.json",
+      "source_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "packaged_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/LunarLander-v2/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/LunarLander-v2/model_config.json",
+      "source_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "packaged_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/LunarLander-v2/policy.ckpt",
+      "destination": "expert_policies/ckpts/trpo/LunarLander-v2/policy.ckpt",
+      "source_sha256": "b04834be184ccc415b18e4cba4ad5772eda424181af92a57b470741bf52957af",
+      "packaged_sha256": "b04834be184ccc415b18e4cba4ad5772eda424181af92a57b470741bf52957af",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/LunarLander-v2/results.pkl",
+      "destination": "expert_policies/ckpts/trpo/LunarLander-v2/results.pkl",
+      "source_sha256": "c674ede2e8899ffa29c4297193380fb16ee977fdc0f843543b57e3bac04c5b2f",
+      "packaged_sha256": "c674ede2e8899ffa29c4297193380fb16ee977fdc0f843543b57e3bac04c5b2f",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/LunarLander-v2/value.ckpt",
+      "destination": "expert_policies/ckpts/trpo/LunarLander-v2/value.ckpt",
+      "source_sha256": "6423cce61fc95ef80969d6fa7d74d97d2108b5a62a89ee1fa507f9416e55c7ab",
+      "packaged_sha256": "6423cce61fc95ef80969d6fa7d74d97d2108b5a62a89ee1fa507f9416e55c7ab",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/MountainCar-v0/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/MountainCar-v0/model_config.json",
+      "source_sha256": "6d40ae92a5b8007bcbbc78fad00d7be9cf1961e21f10a2792f4c34c66695675f",
+      "packaged_sha256": "6d40ae92a5b8007bcbbc78fad00d7be9cf1961e21f10a2792f4c34c66695675f",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/MountainCarContinuous-v0/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/MountainCarContinuous-v0/model_config.json",
+      "source_sha256": "088105aecb4221e7d68e2174c0e40d7fe04b58b75191689ee67dd32ff6e08b13",
+      "packaged_sha256": "088105aecb4221e7d68e2174c0e40d7fe04b58b75191689ee67dd32ff6e08b13",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/MountainCarContinuous-v0/policy.ckpt",
+      "destination": "expert_policies/ckpts/trpo/MountainCarContinuous-v0/policy.ckpt",
+      "source_sha256": "a5296e24f902edd1dade4ca4d3dd8ffcf2dea335afaa52c0b0b08f3bfe808011",
+      "packaged_sha256": "a5296e24f902edd1dade4ca4d3dd8ffcf2dea335afaa52c0b0b08f3bfe808011",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/MountainCarContinuous-v0/results.pkl",
+      "destination": "expert_policies/ckpts/trpo/MountainCarContinuous-v0/results.pkl",
+      "source_sha256": "82c9e00418a64ea7f50a7eaaddf793912452a52aba4b9e22b9951db68b028945",
+      "packaged_sha256": "82c9e00418a64ea7f50a7eaaddf793912452a52aba4b9e22b9951db68b028945",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/MountainCarContinuous-v0/value.ckpt",
+      "destination": "expert_policies/ckpts/trpo/MountainCarContinuous-v0/value.ckpt",
+      "source_sha256": "39079b5efaa6bc880b90e3f2d27a3ff0f935c0217d4153d95a72ad3c081574f3",
+      "packaged_sha256": "39079b5efaa6bc880b90e3f2d27a3ff0f935c0217d4153d95a72ad3c081574f3",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/Pendulum-v0/model_config.json",
+      "destination": "expert_policies/ckpts/trpo/Pendulum-v0/model_config.json",
+      "source_sha256": "187666ffd89f0bcf351a678934acd399868c6d2bf03a753e92a6529ef4eb1590",
+      "packaged_sha256": "187666ffd89f0bcf351a678934acd399868c6d2bf03a753e92a6529ef4eb1590",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/Pendulum-v0/policy.ckpt",
+      "destination": "expert_policies/ckpts/trpo/Pendulum-v0/policy.ckpt",
+      "source_sha256": "e76dfe1481fc5eaaee3e7961e557028406324be074c9dcd83d56383fc02962b8",
+      "packaged_sha256": "e76dfe1481fc5eaaee3e7961e557028406324be074c9dcd83d56383fc02962b8",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/Pendulum-v0/results.pkl",
+      "destination": "expert_policies/ckpts/trpo/Pendulum-v0/results.pkl",
+      "source_sha256": "02f3921931bd65e28eccade4b5394b6587368cf2ccfb6d063de28a008b325ef5",
+      "packaged_sha256": "02f3921931bd65e28eccade4b5394b6587368cf2ccfb6d063de28a008b325ef5",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/ckpts/trpo/Pendulum-v0/value.ckpt",
+      "destination": "expert_policies/ckpts/trpo/Pendulum-v0/value.ckpt",
+      "source_sha256": "1bb8d4c3cb2219010cea280d45b4a2ed40dbd93a5b84d2902f40f6ed5c1f1356",
+      "packaged_sha256": "1bb8d4c3cb2219010cea280d45b4a2ed40dbd93a5b84d2902f40f6ed5c1f1356",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/config.json",
+      "destination": "expert_policies/config.json",
+      "source_sha256": "29a460161720ae09e1f3700be916b5f73a9ea5a36aada7b8f16df6d0698bf30a",
+      "packaged_sha256": "29a460161720ae09e1f3700be916b5f73a9ea5a36aada7b8f16df6d0698bf30a",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/models/ac.py",
+      "destination": "expert_policies/models/ac.py",
+      "source_sha256": "1da1ec9b00eed88c49ebff9ba9c71908e4786a77b8cd575389c97f855ed2dc7c",
+      "packaged_sha256": "1da1ec9b00eed88c49ebff9ba9c71908e4786a77b8cd575389c97f855ed2dc7c",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/models/gae.py",
+      "destination": "expert_policies/models/gae.py",
+      "source_sha256": "d9fb879b142b5d7d461adfdca9e6a43edd0c4b50a1a4fba57e365aa8fd8e3314",
+      "packaged_sha256": "d9fb879b142b5d7d461adfdca9e6a43edd0c4b50a1a4fba57e365aa8fd8e3314",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/models/nets.py",
+      "destination": "expert_policies/models/nets.py",
+      "source_sha256": "920e5b8c574e5d3ccd97d507ab470a11ddb6fb6c6ad6127c6ab28f1d388fb6c2",
+      "packaged_sha256": "920e5b8c574e5d3ccd97d507ab470a11ddb6fb6c6ad6127c6ab28f1d388fb6c2",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/models/pg.py",
+      "destination": "expert_policies/models/pg.py",
+      "source_sha256": "db084d4c7797a932737a1e09416e302ef48e7e71e4b8c5a993a051a822f1a86e",
+      "packaged_sha256": "db084d4c7797a932737a1e09416e302ef48e7e71e4b8c5a993a051a822f1a86e",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/models/ppo.py",
+      "destination": "expert_policies/models/ppo.py",
+      "source_sha256": "ed65970a27f4038d6385914b6232799239e3826234ad12df56b93ccab593b7ee",
+      "packaged_sha256": "ed65970a27f4038d6385914b6232799239e3826234ad12df56b93ccab593b7ee",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/models/qlearning.py",
+      "destination": "expert_policies/models/qlearning.py",
+      "source_sha256": "51eb0c9bb9f04a26b11fd825ca8a2e10c11497e715ac399b33b30a23edcb1674",
+      "packaged_sha256": "51eb0c9bb9f04a26b11fd825ca8a2e10c11497e715ac399b33b30a23edcb1674",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/models/trpo.py",
+      "destination": "expert_policies/models/trpo.py",
+      "source_sha256": "0d41e3067078f7a0d3b0b347a91884d76f4a0c29b9457ab04080d26ba9bc1b06",
+      "packaged_sha256": "0d41e3067078f7a0d3b0b347a91884d76f4a0c29b9457ab04080d26ba9bc1b06",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/requirements.txt",
+      "destination": "expert_policies/requirements.txt",
+      "source_sha256": "23d9220f5695c1291a0c202f422240d419d4d80a62b3dfbf00f54d2832d70da1",
+      "packaged_sha256": "23d9220f5695c1291a0c202f422240d419d4d80a62b3dfbf00f54d2832d70da1",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/run.py",
+      "destination": "expert_policies/run.py",
+      "source_sha256": "a9a7ff38c58ef7a1275baf9118e99817f064753a1533fb51e5ff04365ab5348b",
+      "packaged_sha256": "c7e9aaae643aa2be437fd44807418657525a833bbef32c14d5c6f3467c2b9192",
+      "modified": true
+    },
+    {
+      "source": "expert_policies/train.py",
+      "destination": "expert_policies/train.py",
+      "source_sha256": "052b87d732b13a37bcdfb375b8932a5b7aae55b4a3634f7fac182dc18d61b7b3",
+      "packaged_sha256": "f223692503e43c709bb0cc1021e2e9978de6083aae3d5d4dee6ddbdd64ab717a",
+      "modified": true
+    },
+    {
+      "source": "expert_policies/utils/funcs.py",
+      "destination": "expert_policies/utils/funcs.py",
+      "source_sha256": "7d592dec3b4bd9b8d173f15174d3b9f51edafa39c75312373c2ea03b946489b1",
+      "packaged_sha256": "7d592dec3b4bd9b8d173f15174d3b9f51edafa39c75312373c2ea03b946489b1",
+      "modified": false
+    },
+    {
+      "source": "expert_policies/visualize.py",
+      "destination": "expert_policies/visualize.py",
+      "source_sha256": "370182b66d4c9a9eafbaa8d9a7ba9ac7c12eaccd5c9e6fea7c333261888c156f",
+      "packaged_sha256": "86010216860d237cabf9bc91f00a3bf6c5ba9b279424804f8488a87e9c944029",
+      "modified": true
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 gae/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 gae/discriminator.ckpt",
+      "source_sha256": "b8479dbf0d0f3fa4d690d2ceaf0717f28284d5c230f069bf9a7f5023f20c3ad1",
+      "packaged_sha256": "b8479dbf0d0f3fa4d690d2ceaf0717f28284d5c230f069bf9a7f5023f20c3ad1",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 gae/model_config.json",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 gae/model_config.json",
+      "source_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "packaged_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 gae/policy.ckpt",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 gae/policy.ckpt",
+      "source_sha256": "e1a3085f49952369400ead83dca573593f24f1c9f4c7f50c3601518e4300310b",
+      "packaged_sha256": "e1a3085f49952369400ead83dca573593f24f1c9f4c7f50c3601518e4300310b",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 gae/results.pkl",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 gae/results.pkl",
+      "source_sha256": "dbe20aad1185235262bcd79be327f49aad9ea3bea06f23a88288a23e687d6e92",
+      "packaged_sha256": "dbe20aad1185235262bcd79be327f49aad9ea3bea06f23a88288a23e687d6e92",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 gae/value.ckpt",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 gae/value.ckpt",
+      "source_sha256": "633379be34bfbd1be0f66ba7099864aaaf9a1008f3b51c76e2fd1aaf75b44ce6",
+      "packaged_sha256": "633379be34bfbd1be0f66ba7099864aaaf9a1008f3b51c76e2fd1aaf75b44ce6",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 ppo/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 ppo/discriminator.ckpt",
+      "source_sha256": "88c5fcf9ae1567e239427ec1706918580d1d02d44c1b3c0c177d8c062d3f3248",
+      "packaged_sha256": "88c5fcf9ae1567e239427ec1706918580d1d02d44c1b3c0c177d8c062d3f3248",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 ppo/model_config.json",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 ppo/model_config.json",
+      "source_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "packaged_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 ppo/policy.ckpt",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 ppo/policy.ckpt",
+      "source_sha256": "28a8c3fa85b488e5ee16d2c35733d2f5829ff9cb24f1d995ed24fb4ae2f2cc01",
+      "packaged_sha256": "28a8c3fa85b488e5ee16d2c35733d2f5829ff9cb24f1d995ed24fb4ae2f2cc01",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 ppo/results.pkl",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 ppo/results.pkl",
+      "source_sha256": "e7020930d92e59207c054c3e829cfa6d087a2b854b7cb340d06656664460d80c",
+      "packaged_sha256": "e7020930d92e59207c054c3e829cfa6d087a2b854b7cb340d06656664460d80c",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 ppo/value.ckpt",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 ppo/value.ckpt",
+      "source_sha256": "f1fdbde2e67a73bbc09f9f996eb062271227ca4add7651ee5921bfeb6c6e673f",
+      "packaged_sha256": "f1fdbde2e67a73bbc09f9f996eb062271227ca4add7651ee5921bfeb6c6e673f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 trpo/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 trpo/discriminator.ckpt",
+      "source_sha256": "9d055d0dc333f9dfec474e4a1700090ed9a145a85fd637e494779a2ad7a96493",
+      "packaged_sha256": "9d055d0dc333f9dfec474e4a1700090ed9a145a85fd637e494779a2ad7a96493",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 trpo/model_config.json",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 trpo/model_config.json",
+      "source_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "packaged_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 trpo/policy.ckpt",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 trpo/policy.ckpt",
+      "source_sha256": "13112e03ca015dbb22e347499bb8ef396ae01f441681fe96f091f7a61961723d",
+      "packaged_sha256": "13112e03ca015dbb22e347499bb8ef396ae01f441681fe96f091f7a61961723d",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 trpo/results.pkl",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 trpo/results.pkl",
+      "source_sha256": "233613a5a27a6b098dc157f5cfa918004a42f88e72617c224662d0b375292397",
+      "packaged_sha256": "233613a5a27a6b098dc157f5cfa918004a42f88e72617c224662d0b375292397",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/BipedalWalker-v3 trpo/value.ckpt",
+      "destination": "imitation_learning/ckpt/BipedalWalker-v3 trpo/value.ckpt",
+      "source_sha256": "db1b3440a75f8e20fddf43f3921cea58ed94d4d3d105b7fd5204244ff72a24af",
+      "packaged_sha256": "db1b3440a75f8e20fddf43f3921cea58ed94d4d3d105b7fd5204244ff72a24af",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 gae/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/CartPole-v1 gae/discriminator.ckpt",
+      "source_sha256": "b33c17613b651021a7c5011dd51034560b39fd2673f03ea9ab1794f926225c97",
+      "packaged_sha256": "b33c17613b651021a7c5011dd51034560b39fd2673f03ea9ab1794f926225c97",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 gae/model_config.json",
+      "destination": "imitation_learning/ckpt/CartPole-v1 gae/model_config.json",
+      "source_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "packaged_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 gae/policy.ckpt",
+      "destination": "imitation_learning/ckpt/CartPole-v1 gae/policy.ckpt",
+      "source_sha256": "e45d448bedf58198029ad17de394ad28987e44dbde0ef8399cd85f344c9ac582",
+      "packaged_sha256": "e45d448bedf58198029ad17de394ad28987e44dbde0ef8399cd85f344c9ac582",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 gae/results.pkl",
+      "destination": "imitation_learning/ckpt/CartPole-v1 gae/results.pkl",
+      "source_sha256": "23e4c2c648e68f4e06bc21adadde9d282dab7c0f5fb68ee6cd359b2aa56fbdb5",
+      "packaged_sha256": "23e4c2c648e68f4e06bc21adadde9d282dab7c0f5fb68ee6cd359b2aa56fbdb5",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 gae/value.ckpt",
+      "destination": "imitation_learning/ckpt/CartPole-v1 gae/value.ckpt",
+      "source_sha256": "fce4d0e91e24b0300c317730eb4f584b0507ab40905cd7f34bc0239bf4773fc0",
+      "packaged_sha256": "fce4d0e91e24b0300c317730eb4f584b0507ab40905cd7f34bc0239bf4773fc0",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 ppo/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/CartPole-v1 ppo/discriminator.ckpt",
+      "source_sha256": "b74a84742d3d24619a1b580946760a07b11dbf95e9d4569bdcf070b4a7cc48fd",
+      "packaged_sha256": "b74a84742d3d24619a1b580946760a07b11dbf95e9d4569bdcf070b4a7cc48fd",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 ppo/model_config.json",
+      "destination": "imitation_learning/ckpt/CartPole-v1 ppo/model_config.json",
+      "source_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "packaged_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 ppo/policy.ckpt",
+      "destination": "imitation_learning/ckpt/CartPole-v1 ppo/policy.ckpt",
+      "source_sha256": "966853273725e4bb73894efbb218a9e5fb939351781b23dc5bfc10873427669a",
+      "packaged_sha256": "966853273725e4bb73894efbb218a9e5fb939351781b23dc5bfc10873427669a",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 ppo/results.pkl",
+      "destination": "imitation_learning/ckpt/CartPole-v1 ppo/results.pkl",
+      "source_sha256": "499adcd546814f9af6c6aaf11b2960f4adbae2f9b63976322bab743300d5a1f9",
+      "packaged_sha256": "499adcd546814f9af6c6aaf11b2960f4adbae2f9b63976322bab743300d5a1f9",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 ppo/value.ckpt",
+      "destination": "imitation_learning/ckpt/CartPole-v1 ppo/value.ckpt",
+      "source_sha256": "7ff62b14baa88ed9e616b3df4c892a7805a880e9426f2f21c51aec8f86634552",
+      "packaged_sha256": "7ff62b14baa88ed9e616b3df4c892a7805a880e9426f2f21c51aec8f86634552",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 trpo/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/CartPole-v1 trpo/discriminator.ckpt",
+      "source_sha256": "2ad900567b06a4f27b95f79a4138a1c755221e9c16e64e64a23f32f1f7e4d02f",
+      "packaged_sha256": "2ad900567b06a4f27b95f79a4138a1c755221e9c16e64e64a23f32f1f7e4d02f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 trpo/model_config.json",
+      "destination": "imitation_learning/ckpt/CartPole-v1 trpo/model_config.json",
+      "source_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "packaged_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 trpo/policy.ckpt",
+      "destination": "imitation_learning/ckpt/CartPole-v1 trpo/policy.ckpt",
+      "source_sha256": "6f12f5d373093edaea37b60e58655f5b290f823d30398db26ddf24b789874997",
+      "packaged_sha256": "6f12f5d373093edaea37b60e58655f5b290f823d30398db26ddf24b789874997",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 trpo/results.pkl",
+      "destination": "imitation_learning/ckpt/CartPole-v1 trpo/results.pkl",
+      "source_sha256": "1b1b6e00253bc0ad6028b8eb5f70971a8054bb4ddd0df6eb36e5fbcc6efa681e",
+      "packaged_sha256": "1b1b6e00253bc0ad6028b8eb5f70971a8054bb4ddd0df6eb36e5fbcc6efa681e",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/CartPole-v1 trpo/value.ckpt",
+      "destination": "imitation_learning/ckpt/CartPole-v1 trpo/value.ckpt",
+      "source_sha256": "daec000659d65b815745c92ad4fd2edbd4d6ac01499e3333585a5aa8024a0e0a",
+      "packaged_sha256": "daec000659d65b815745c92ad4fd2edbd4d6ac01499e3333585a5aa8024a0e0a",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/FrozenLake-v0/model_config.json",
+      "destination": "imitation_learning/ckpt/FrozenLake-v0/model_config.json",
+      "source_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "packaged_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 gae/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 gae/discriminator.ckpt",
+      "source_sha256": "d6802cefc0c058223c033b3389ae9576d2e7b4a9f33e33d9ddc6fef7c1f29925",
+      "packaged_sha256": "d6802cefc0c058223c033b3389ae9576d2e7b4a9f33e33d9ddc6fef7c1f29925",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 gae/model_config.json",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 gae/model_config.json",
+      "source_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "packaged_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 gae/policy.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 gae/policy.ckpt",
+      "source_sha256": "aa20004ecc38cc86071f4a7bcd8c6f7b46c8e511439650f4ff53b9bb03d992c0",
+      "packaged_sha256": "aa20004ecc38cc86071f4a7bcd8c6f7b46c8e511439650f4ff53b9bb03d992c0",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 gae/results.pkl",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 gae/results.pkl",
+      "source_sha256": "aa3c65fbdaf7a3f2604beae96a43b8dfd1541e359a8e9d82228713c16ee11049",
+      "packaged_sha256": "aa3c65fbdaf7a3f2604beae96a43b8dfd1541e359a8e9d82228713c16ee11049",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 gae/value.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 gae/value.ckpt",
+      "source_sha256": "0e71ff609b4e394cf78f130dbf1c02fc6ded64bc5eaac2a9cdd855ae5b753f65",
+      "packaged_sha256": "0e71ff609b4e394cf78f130dbf1c02fc6ded64bc5eaac2a9cdd855ae5b753f65",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 ppo/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 ppo/discriminator.ckpt",
+      "source_sha256": "86e41cd68e9eef916b14a649c0ed6acbeba47091a5914d24fe3d4d3cb1ab0d7f",
+      "packaged_sha256": "86e41cd68e9eef916b14a649c0ed6acbeba47091a5914d24fe3d4d3cb1ab0d7f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 ppo/model_config.json",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 ppo/model_config.json",
+      "source_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "packaged_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 ppo/policy.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 ppo/policy.ckpt",
+      "source_sha256": "7b7e6bd9113f1bd1a7f5478c8e7c3054848df8072fe314a388936c0deb1949c3",
+      "packaged_sha256": "7b7e6bd9113f1bd1a7f5478c8e7c3054848df8072fe314a388936c0deb1949c3",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 ppo/results.pkl",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 ppo/results.pkl",
+      "source_sha256": "27c3b2d070a3468ffb267d34b3fcb23d2f281b0562b5f45f03e50a46059d3ee7",
+      "packaged_sha256": "27c3b2d070a3468ffb267d34b3fcb23d2f281b0562b5f45f03e50a46059d3ee7",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 ppo/value.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 ppo/value.ckpt",
+      "source_sha256": "03974fd49e106548f85661da800db5a4da2699e23063716552424ae833b84f80",
+      "packaged_sha256": "03974fd49e106548f85661da800db5a4da2699e23063716552424ae833b84f80",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo/discriminator.ckpt",
+      "source_sha256": "f511c91e0839b495a07097306c33c96df29855d25b54f27f2b07a2e92ec9ab72",
+      "packaged_sha256": "f511c91e0839b495a07097306c33c96df29855d25b54f27f2b07a2e92ec9ab72",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo/model_config.json",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo/model_config.json",
+      "source_sha256": "df7f7e6dd29e753fe742ad8a1308c2d2ec4c6199512a2e6421b164bc11ad204f",
+      "packaged_sha256": "df7f7e6dd29e753fe742ad8a1308c2d2ec4c6199512a2e6421b164bc11ad204f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo/policy.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo/policy.ckpt",
+      "source_sha256": "faca244a0493d1730df9b50935f8e6e8d370789a6108162021dbae98dfcd49b4",
+      "packaged_sha256": "faca244a0493d1730df9b50935f8e6e8d370789a6108162021dbae98dfcd49b4",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo/results.pkl",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo/results.pkl",
+      "source_sha256": "4eebac7b43c1a469974bca62d8241dcb3808b99490e7e6e8e6f0d2b9ac9c1f4d",
+      "packaged_sha256": "4eebac7b43c1a469974bca62d8241dcb3808b99490e7e6e8e6f0d2b9ac9c1f4d",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo/value.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo/value.ckpt",
+      "source_sha256": "23239f78535a234c10c494b89bd9478365e466c9c8d25bf935ef1d0168089614",
+      "packaged_sha256": "23239f78535a234c10c494b89bd9478365e466c9c8d25bf935ef1d0168089614",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo lambda=0/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo lambda=0/discriminator.ckpt",
+      "source_sha256": "071b97eeb7a08f90b488196e825ce201d48355bff34352a247c474a1186fdb68",
+      "packaged_sha256": "071b97eeb7a08f90b488196e825ce201d48355bff34352a247c474a1186fdb68",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo lambda=0/model_config.json",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo lambda=0/model_config.json",
+      "source_sha256": "df7f7e6dd29e753fe742ad8a1308c2d2ec4c6199512a2e6421b164bc11ad204f",
+      "packaged_sha256": "df7f7e6dd29e753fe742ad8a1308c2d2ec4c6199512a2e6421b164bc11ad204f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo lambda=0/policy.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo lambda=0/policy.ckpt",
+      "source_sha256": "32346b6dc931d9f8ef31658da8660aee4093c3229987a304447255afce5ba079",
+      "packaged_sha256": "32346b6dc931d9f8ef31658da8660aee4093c3229987a304447255afce5ba079",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo lambda=0/results.pkl",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo lambda=0/results.pkl",
+      "source_sha256": "c806629080120a530e924fd0fcd617c1c2d416136f03fbc43f6d5a530816c873",
+      "packaged_sha256": "c806629080120a530e924fd0fcd617c1c2d416136f03fbc43f6d5a530816c873",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/LunarLander-v2 trpo lambda=0/value.ckpt",
+      "destination": "imitation_learning/ckpt/LunarLander-v2 trpo lambda=0/value.ckpt",
+      "source_sha256": "9d05dd9df38e414b899a3788030b42f3bf8d00a94fcd6bed614b5a17135b481f",
+      "packaged_sha256": "9d05dd9df38e414b899a3788030b42f3bf8d00a94fcd6bed614b5a17135b481f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 gae/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 gae/discriminator.ckpt",
+      "source_sha256": "6bbb43e245afafcc4eaaf60937045cc4d725a3897573f565018182f696450ef2",
+      "packaged_sha256": "6bbb43e245afafcc4eaaf60937045cc4d725a3897573f565018182f696450ef2",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 gae/model_config.json",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 gae/model_config.json",
+      "source_sha256": "d3d55998fcef9c81ccd2015025c478563978eb5f3a3c13ada5e1bdb3afef69a6",
+      "packaged_sha256": "d3d55998fcef9c81ccd2015025c478563978eb5f3a3c13ada5e1bdb3afef69a6",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 gae/policy.ckpt",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 gae/policy.ckpt",
+      "source_sha256": "44199279700d9aaf70adf6defe6742a443de5e416e38af415ff39b4e4afd4614",
+      "packaged_sha256": "44199279700d9aaf70adf6defe6742a443de5e416e38af415ff39b4e4afd4614",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 gae/results.pkl",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 gae/results.pkl",
+      "source_sha256": "3224a55bf86e490a803c531dd32f2d8a5d02fc532afb6f0b10a48b20c8eb3f12",
+      "packaged_sha256": "3224a55bf86e490a803c531dd32f2d8a5d02fc532afb6f0b10a48b20c8eb3f12",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 gae/value.ckpt",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 gae/value.ckpt",
+      "source_sha256": "64987b8cd785e590b9da0be6a48a767081d497c5f1dfe2ede9206b4c2dc02697",
+      "packaged_sha256": "64987b8cd785e590b9da0be6a48a767081d497c5f1dfe2ede9206b4c2dc02697",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 ppo/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 ppo/discriminator.ckpt",
+      "source_sha256": "91e3130f7920ecf7aad692787c2ed8fd681a99f907e1c799cbaf6b82488cab1f",
+      "packaged_sha256": "91e3130f7920ecf7aad692787c2ed8fd681a99f907e1c799cbaf6b82488cab1f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 ppo/model_config.json",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 ppo/model_config.json",
+      "source_sha256": "d3d55998fcef9c81ccd2015025c478563978eb5f3a3c13ada5e1bdb3afef69a6",
+      "packaged_sha256": "d3d55998fcef9c81ccd2015025c478563978eb5f3a3c13ada5e1bdb3afef69a6",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 ppo/policy.ckpt",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 ppo/policy.ckpt",
+      "source_sha256": "25167f904b614e192de257523b38def492c3817372bda654c41b04f85b819935",
+      "packaged_sha256": "25167f904b614e192de257523b38def492c3817372bda654c41b04f85b819935",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 ppo/results.pkl",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 ppo/results.pkl",
+      "source_sha256": "8d85b2208446908dc24c8285f3a4ac6f993ead524d9bcbba64334e805db01233",
+      "packaged_sha256": "8d85b2208446908dc24c8285f3a4ac6f993ead524d9bcbba64334e805db01233",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 ppo/value.ckpt",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 ppo/value.ckpt",
+      "source_sha256": "9b6b9734ce2753ee8acea63fcff9e10eef198425c032264eb4d84928f8e3e949",
+      "packaged_sha256": "9b6b9734ce2753ee8acea63fcff9e10eef198425c032264eb4d84928f8e3e949",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 trpo/discriminator.ckpt",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 trpo/discriminator.ckpt",
+      "source_sha256": "58d91389eb4713c839d12dea35e77271ef242724c1a67854611f94c9fa62b864",
+      "packaged_sha256": "58d91389eb4713c839d12dea35e77271ef242724c1a67854611f94c9fa62b864",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 trpo/model_config.json",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 trpo/model_config.json",
+      "source_sha256": "d3d55998fcef9c81ccd2015025c478563978eb5f3a3c13ada5e1bdb3afef69a6",
+      "packaged_sha256": "d3d55998fcef9c81ccd2015025c478563978eb5f3a3c13ada5e1bdb3afef69a6",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 trpo/policy.ckpt",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 trpo/policy.ckpt",
+      "source_sha256": "45d72548019cc8f2ba85a367640c907340a4dcdaa29778d5745d0b1840024bcf",
+      "packaged_sha256": "45d72548019cc8f2ba85a367640c907340a4dcdaa29778d5745d0b1840024bcf",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 trpo/results.pkl",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 trpo/results.pkl",
+      "source_sha256": "b70402c501b975a16810aec9498f7e0053d4a089fd5304a30fbb0a43ff493bc6",
+      "packaged_sha256": "b70402c501b975a16810aec9498f7e0053d4a089fd5304a30fbb0a43ff493bc6",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/ckpt/Pendulum-v0 trpo/value.ckpt",
+      "destination": "imitation_learning/ckpt/Pendulum-v0 trpo/value.ckpt",
+      "source_sha256": "c9e5e27006114c3ef5e32db829e08352bb5f17a07aae32bf518d1d6d1f3b57a6",
+      "packaged_sha256": "c9e5e27006114c3ef5e32db829e08352bb5f17a07aae32bf518d1d6d1f3b57a6",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/config.json",
+      "destination": "imitation_learning/config.json",
+      "source_sha256": "9abf2b955697de1baf136cc9f270f382aed13f3cfb180b14f300b1648bdf7130",
+      "packaged_sha256": "9abf2b955697de1baf136cc9f270f382aed13f3cfb180b14f300b1648bdf7130",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 gae/model_config.json",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 gae/model_config.json",
+      "source_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "packaged_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 gae/policy.ckpt",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 gae/policy.ckpt",
+      "source_sha256": "d3f797942be3b3a9406a7a4ac05cd8d3877251d49566898cd7c47d55f92487c8",
+      "packaged_sha256": "d3f797942be3b3a9406a7a4ac05cd8d3877251d49566898cd7c47d55f92487c8",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 gae/results.pkl",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 gae/results.pkl",
+      "source_sha256": "c870d765e2ef85193816a047b1bd7f95ab5dc4dfd5428b0fa1552f4580f14aea",
+      "packaged_sha256": "c870d765e2ef85193816a047b1bd7f95ab5dc4dfd5428b0fa1552f4580f14aea",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 gae/value.ckpt",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 gae/value.ckpt",
+      "source_sha256": "2748444a5b72f5d7045eee3a6551d86bddd880872e7a6e3d8cc3f656f20a005b",
+      "packaged_sha256": "2748444a5b72f5d7045eee3a6551d86bddd880872e7a6e3d8cc3f656f20a005b",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 ppo/model_config.json",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 ppo/model_config.json",
+      "source_sha256": "43b2a275daa7bc9f0c9ef4ae249f632c9368bb16be2a693bfc733e52b968139c",
+      "packaged_sha256": "43b2a275daa7bc9f0c9ef4ae249f632c9368bb16be2a693bfc733e52b968139c",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 ppo/policy.ckpt",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 ppo/policy.ckpt",
+      "source_sha256": "a3746f063b6ed92b8c2bf174a904ea283713d79892c6ed44b652209198c6da5a",
+      "packaged_sha256": "a3746f063b6ed92b8c2bf174a904ea283713d79892c6ed44b652209198c6da5a",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 ppo/results.pkl",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 ppo/results.pkl",
+      "source_sha256": "de570b0ca015d8132c26e9955f5b52310c55c4de8b1680347267d9bf4cf64886",
+      "packaged_sha256": "de570b0ca015d8132c26e9955f5b52310c55c4de8b1680347267d9bf4cf64886",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 ppo/value.ckpt",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 ppo/value.ckpt",
+      "source_sha256": "ae1d187472f89aef3680e1891987c817224f6583104fdabc6f434263c8780df2",
+      "packaged_sha256": "ae1d187472f89aef3680e1891987c817224f6583104fdabc6f434263c8780df2",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 trpo/model_config.json",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 trpo/model_config.json",
+      "source_sha256": "8522621ec88542b478da62e3e47467b4678a29af77c4d21b5c3809b5cd0704eb",
+      "packaged_sha256": "8522621ec88542b478da62e3e47467b4678a29af77c4d21b5c3809b5cd0704eb",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/BipedalWalker-v3 trpo/policy.ckpt",
+      "destination": "imitation_learning/experts/BipedalWalker-v3 trpo/policy.ckpt",
+      "source_sha256": "1a28adfa9b3612ea54d6e0da68d54a9691ffab2e84fdd62e2732985051c24094",
+      "packaged_sha256": "1a28adfa9b3612ea54d6e0da68d54a9691ffab2e84fdd62e2732985051c24094",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 gae/model_config.json",
+      "destination": "imitation_learning/experts/CartPole-v1 gae/model_config.json",
+      "source_sha256": "f49778b860bda89426522f5214221a2a89012143acbadf20972c59c03bb85ddc",
+      "packaged_sha256": "f49778b860bda89426522f5214221a2a89012143acbadf20972c59c03bb85ddc",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 gae/policy.ckpt",
+      "destination": "imitation_learning/experts/CartPole-v1 gae/policy.ckpt",
+      "source_sha256": "30f344dc14197af9c6b71b3692a6a3d07d0ef55beedd12896952f5f61029fc4e",
+      "packaged_sha256": "30f344dc14197af9c6b71b3692a6a3d07d0ef55beedd12896952f5f61029fc4e",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 gae/results.pkl",
+      "destination": "imitation_learning/experts/CartPole-v1 gae/results.pkl",
+      "source_sha256": "0b7720aeade0d5333a5a64bf25d1d1d5ac5676186e3e40f7aa4d915a4e58bd84",
+      "packaged_sha256": "0b7720aeade0d5333a5a64bf25d1d1d5ac5676186e3e40f7aa4d915a4e58bd84",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 gae/value.ckpt",
+      "destination": "imitation_learning/experts/CartPole-v1 gae/value.ckpt",
+      "source_sha256": "22927fbfe1af532ab9ca43e81ae5dd5aec91a2ad86abfebe032357098b651d3f",
+      "packaged_sha256": "22927fbfe1af532ab9ca43e81ae5dd5aec91a2ad86abfebe032357098b651d3f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 ppo/model_config.json",
+      "destination": "imitation_learning/experts/CartPole-v1 ppo/model_config.json",
+      "source_sha256": "fbb79df8109e5045aa590a361d34e24694cf53bf2b0a11bb6534915b4c44c7db",
+      "packaged_sha256": "fbb79df8109e5045aa590a361d34e24694cf53bf2b0a11bb6534915b4c44c7db",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 ppo/policy.ckpt",
+      "destination": "imitation_learning/experts/CartPole-v1 ppo/policy.ckpt",
+      "source_sha256": "ff1c8ad188cccbce03fb2c4e5d2a3309a631de78322a56cbe0e708d0dcd01675",
+      "packaged_sha256": "ff1c8ad188cccbce03fb2c4e5d2a3309a631de78322a56cbe0e708d0dcd01675",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 ppo/results.pkl",
+      "destination": "imitation_learning/experts/CartPole-v1 ppo/results.pkl",
+      "source_sha256": "e20a172bc604fce104897775504b8727612922a74dc461f91ee1a3337749f5cd",
+      "packaged_sha256": "e20a172bc604fce104897775504b8727612922a74dc461f91ee1a3337749f5cd",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 ppo/value.ckpt",
+      "destination": "imitation_learning/experts/CartPole-v1 ppo/value.ckpt",
+      "source_sha256": "8178d7a04772221dee92d9867d228467b72ccc32790a4e0246c898196b1eea1d",
+      "packaged_sha256": "8178d7a04772221dee92d9867d228467b72ccc32790a4e0246c898196b1eea1d",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 trpo/model_config.json",
+      "destination": "imitation_learning/experts/CartPole-v1 trpo/model_config.json",
+      "source_sha256": "243d3754cbcd3643c9e9c7dfc5a0d9c02f37f7c11edf1dcee68045b51bf087dc",
+      "packaged_sha256": "243d3754cbcd3643c9e9c7dfc5a0d9c02f37f7c11edf1dcee68045b51bf087dc",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/CartPole-v1 trpo/policy.ckpt",
+      "destination": "imitation_learning/experts/CartPole-v1 trpo/policy.ckpt",
+      "source_sha256": "d555e14a2ec60de581340c0286d6de1c8cf5e1b83611fc341886567e9e4fac3f",
+      "packaged_sha256": "d555e14a2ec60de581340c0286d6de1c8cf5e1b83611fc341886567e9e4fac3f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/FrozenLake-v0/model_config.json",
+      "destination": "imitation_learning/experts/FrozenLake-v0/model_config.json",
+      "source_sha256": "821b90e67488ead7d97daf3048007f04d6323fb4eef47c165fd348068b5df9e8",
+      "packaged_sha256": "821b90e67488ead7d97daf3048007f04d6323fb4eef47c165fd348068b5df9e8",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/FrozenLake-v0/q_table.ckpt",
+      "destination": "imitation_learning/experts/FrozenLake-v0/q_table.ckpt",
+      "source_sha256": "eaa20672d2ab74ce9096970abe2bc794388676753b0c7928250b3dd5c4f975d7",
+      "packaged_sha256": "eaa20672d2ab74ce9096970abe2bc794388676753b0c7928250b3dd5c4f975d7",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/FrozenLake-v0/q_table.npy",
+      "destination": "imitation_learning/experts/FrozenLake-v0/q_table.npy",
+      "source_sha256": "2d5444c194c7130812cbb8f08b37e9ae55f5c57da3cfdc2682ecde4af3b43ff0",
+      "packaged_sha256": "2d5444c194c7130812cbb8f08b37e9ae55f5c57da3cfdc2682ecde4af3b43ff0",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/FrozenLake-v0/results.pkl",
+      "destination": "imitation_learning/experts/FrozenLake-v0/results.pkl",
+      "source_sha256": "3ed15ef404258677cd0f3046946c16049b11b05d2e0d805f3ba160cd6fd0d50f",
+      "packaged_sha256": "3ed15ef404258677cd0f3046946c16049b11b05d2e0d805f3ba160cd6fd0d50f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 gae/model_config.json",
+      "destination": "imitation_learning/experts/LunarLander-v2 gae/model_config.json",
+      "source_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "packaged_sha256": "99a7d3c04ae40abf3f9388c4fc51de3b4165cfe4dfbf07112829227a7ecfeca1",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 gae/policy.ckpt",
+      "destination": "imitation_learning/experts/LunarLander-v2 gae/policy.ckpt",
+      "source_sha256": "39cf8c88f3957c4cc4ae1825b8abf52a329ad2d2f8e5a0c1afab59a281fd598c",
+      "packaged_sha256": "39cf8c88f3957c4cc4ae1825b8abf52a329ad2d2f8e5a0c1afab59a281fd598c",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 gae/results.pkl",
+      "destination": "imitation_learning/experts/LunarLander-v2 gae/results.pkl",
+      "source_sha256": "ca17f31eb93e3e58fd5d00a398d1bf0105f96e22018b85d925061544802c634c",
+      "packaged_sha256": "ca17f31eb93e3e58fd5d00a398d1bf0105f96e22018b85d925061544802c634c",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 gae/value.ckpt",
+      "destination": "imitation_learning/experts/LunarLander-v2 gae/value.ckpt",
+      "source_sha256": "ad885b2fe55fee1bbf20849db6d6a717dd2deeebb8f3d7e425471e2616af96f4",
+      "packaged_sha256": "ad885b2fe55fee1bbf20849db6d6a717dd2deeebb8f3d7e425471e2616af96f4",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 ppo/model_config.json",
+      "destination": "imitation_learning/experts/LunarLander-v2 ppo/model_config.json",
+      "source_sha256": "4c3189665dec0919a8f6500d4c66bf83cf9d3bc5c89dddfd6395869eec1a35d4",
+      "packaged_sha256": "4c3189665dec0919a8f6500d4c66bf83cf9d3bc5c89dddfd6395869eec1a35d4",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 ppo/policy.ckpt",
+      "destination": "imitation_learning/experts/LunarLander-v2 ppo/policy.ckpt",
+      "source_sha256": "e8a6c4f9c3131006f16dee8ae486da62d49cd5a6419bec8712d4caf7d08820a5",
+      "packaged_sha256": "e8a6c4f9c3131006f16dee8ae486da62d49cd5a6419bec8712d4caf7d08820a5",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 ppo/results.pkl",
+      "destination": "imitation_learning/experts/LunarLander-v2 ppo/results.pkl",
+      "source_sha256": "faa99212d9290f2b36e1d24e9427c51010e7cd829d677d60e69ebc573ac16853",
+      "packaged_sha256": "faa99212d9290f2b36e1d24e9427c51010e7cd829d677d60e69ebc573ac16853",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 ppo/value.ckpt",
+      "destination": "imitation_learning/experts/LunarLander-v2 ppo/value.ckpt",
+      "source_sha256": "c897eb30aa55e319882fff912d047452ecf1e92b157ded5b3f506ae4b3421d32",
+      "packaged_sha256": "c897eb30aa55e319882fff912d047452ecf1e92b157ded5b3f506ae4b3421d32",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 trpo/model_config.json",
+      "destination": "imitation_learning/experts/LunarLander-v2 trpo/model_config.json",
+      "source_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "packaged_sha256": "07033031830e202091a2264be152ca8363e2dd49287230ef72314864c1d559ea",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 trpo/policy.ckpt",
+      "destination": "imitation_learning/experts/LunarLander-v2 trpo/policy.ckpt",
+      "source_sha256": "b04834be184ccc415b18e4cba4ad5772eda424181af92a57b470741bf52957af",
+      "packaged_sha256": "b04834be184ccc415b18e4cba4ad5772eda424181af92a57b470741bf52957af",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 trpo/results.pkl",
+      "destination": "imitation_learning/experts/LunarLander-v2 trpo/results.pkl",
+      "source_sha256": "c674ede2e8899ffa29c4297193380fb16ee977fdc0f843543b57e3bac04c5b2f",
+      "packaged_sha256": "c674ede2e8899ffa29c4297193380fb16ee977fdc0f843543b57e3bac04c5b2f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/LunarLander-v2 trpo/value.ckpt",
+      "destination": "imitation_learning/experts/LunarLander-v2 trpo/value.ckpt",
+      "source_sha256": "6423cce61fc95ef80969d6fa7d74d97d2108b5a62a89ee1fa507f9416e55c7ab",
+      "packaged_sha256": "6423cce61fc95ef80969d6fa7d74d97d2108b5a62a89ee1fa507f9416e55c7ab",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 gae/model_config.json",
+      "destination": "imitation_learning/experts/Pendulum-v0 gae/model_config.json",
+      "source_sha256": "9bfa28e4f4bc93dae402c6cdfe376de168eadf1437ca4ef7c5763903f7adb7b0",
+      "packaged_sha256": "9bfa28e4f4bc93dae402c6cdfe376de168eadf1437ca4ef7c5763903f7adb7b0",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 gae/policy.ckpt",
+      "destination": "imitation_learning/experts/Pendulum-v0 gae/policy.ckpt",
+      "source_sha256": "4d6bcdb979d3070bfe96c07779de5808df6712c5be0485fc5a1a64730af3e0f4",
+      "packaged_sha256": "4d6bcdb979d3070bfe96c07779de5808df6712c5be0485fc5a1a64730af3e0f4",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 gae/results.pkl",
+      "destination": "imitation_learning/experts/Pendulum-v0 gae/results.pkl",
+      "source_sha256": "c7e58d8ca50df19404fdc6132b71d010482f988faafa625d211cf16e8e3413d4",
+      "packaged_sha256": "c7e58d8ca50df19404fdc6132b71d010482f988faafa625d211cf16e8e3413d4",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 gae/value.ckpt",
+      "destination": "imitation_learning/experts/Pendulum-v0 gae/value.ckpt",
+      "source_sha256": "a6e7f9167eb48333c957b3857662294837b8ba70106ece26b9dff914dc8e4a92",
+      "packaged_sha256": "a6e7f9167eb48333c957b3857662294837b8ba70106ece26b9dff914dc8e4a92",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 ppo/model_config.json",
+      "destination": "imitation_learning/experts/Pendulum-v0 ppo/model_config.json",
+      "source_sha256": "e99cc6f4a5aaebb94582bbe8da96cff2f164ae6313d8e474b6ace4f6b0e7186f",
+      "packaged_sha256": "e99cc6f4a5aaebb94582bbe8da96cff2f164ae6313d8e474b6ace4f6b0e7186f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 ppo/policy.ckpt",
+      "destination": "imitation_learning/experts/Pendulum-v0 ppo/policy.ckpt",
+      "source_sha256": "bcb1755c42ceacdf85035b36b59361029500de8876d6bb02e1e897d07bebda4e",
+      "packaged_sha256": "bcb1755c42ceacdf85035b36b59361029500de8876d6bb02e1e897d07bebda4e",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 ppo/results.pkl",
+      "destination": "imitation_learning/experts/Pendulum-v0 ppo/results.pkl",
+      "source_sha256": "35307e57f7af9ee78965a97051ba4cfdb994e033beacc7ec2ecbcfc636819595",
+      "packaged_sha256": "35307e57f7af9ee78965a97051ba4cfdb994e033beacc7ec2ecbcfc636819595",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 ppo/value.ckpt",
+      "destination": "imitation_learning/experts/Pendulum-v0 ppo/value.ckpt",
+      "source_sha256": "d4109c1fcc44a441067077a64a4ddc234c7aa12227f417e1dee031e02f7d1b69",
+      "packaged_sha256": "d4109c1fcc44a441067077a64a4ddc234c7aa12227f417e1dee031e02f7d1b69",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 trpo/model_config.json",
+      "destination": "imitation_learning/experts/Pendulum-v0 trpo/model_config.json",
+      "source_sha256": "48eecc2a75875369dea67a7d6b395122c0a5572755ec4d96d17c031bbc4077a5",
+      "packaged_sha256": "48eecc2a75875369dea67a7d6b395122c0a5572755ec4d96d17c031bbc4077a5",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/experts/Pendulum-v0 trpo/policy.ckpt",
+      "destination": "imitation_learning/experts/Pendulum-v0 trpo/policy.ckpt",
+      "source_sha256": "c61526d54eeb416eb815dd3b9e996433a4ee524214b8edb18524d55b8fe70bca",
+      "packaged_sha256": "c61526d54eeb416eb815dd3b9e996433a4ee524214b8edb18524d55b8fe70bca",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/models/gail.py",
+      "destination": "imitation_learning/models/gail.py",
+      "source_sha256": "64642e78e23c7ef7d1ed6eca7d4ad6bc30876b9602f05e457c9042d0354ecfa1",
+      "packaged_sha256": "64642e78e23c7ef7d1ed6eca7d4ad6bc30876b9602f05e457c9042d0354ecfa1",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/models/nets.py",
+      "destination": "imitation_learning/models/nets.py",
+      "source_sha256": "6696eba217696b2df4febac0660eddc6941749b373f153cb52c5ed6950fb4781",
+      "packaged_sha256": "6696eba217696b2df4febac0660eddc6941749b373f153cb52c5ed6950fb4781",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/requirements.txt",
+      "destination": "imitation_learning/requirements.txt",
+      "source_sha256": "68ff7321c3fcef34c2c71749ebe238a45e35567a7e5c461a6d50326e0c1adb9f",
+      "packaged_sha256": "68ff7321c3fcef34c2c71749ebe238a45e35567a7e5c461a6d50326e0c1adb9f",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/train.py",
+      "destination": "imitation_learning/train.py",
+      "source_sha256": "2da867cd04695da5bef0eba2af58282fb9018687707cd608ff7b7dc8e9ec284c",
+      "packaged_sha256": "2bacf6f6054aa54ac4c33399dc32776ae7485ce2db507a421ce89c0f1c0c3162",
+      "modified": true
+    },
+    {
+      "source": "gail/gail/utils/funcs.py",
+      "destination": "imitation_learning/utils/funcs.py",
+      "source_sha256": "ff298626b81998db752194f20dffdfad85a36916910c7ebf6e1a161662b30946",
+      "packaged_sha256": "ff298626b81998db752194f20dffdfad85a36916910c7ebf6e1a161662b30946",
+      "modified": false
+    },
+    {
+      "source": "gail/gail/validation.py",
+      "destination": "imitation_learning/validation.py",
+      "source_sha256": "8ea8b1d6bfe265403f15cc0c8866d90a0bd46ed235d692f5c6b95822e8076c8d",
+      "packaged_sha256": "2cfe6e5d6c0a8c5051ae9be235db603f706799c79835139be5c3b54d308c770b",
+      "modified": true
+    },
+    {
+      "source": "gail/gail/validation_bipedal_walker.py",
+      "destination": "imitation_learning/validation_bipedal_walker.py",
+      "source_sha256": "fdd1b774b1ab7914bf923df20b3256af46d17c92fc052f622bddfae0fc6cc611",
+      "packaged_sha256": "b462e3cdb0bc22da7887e2e84d72f14dc62d706fd7e6da05b56945ec4077bfde",
+      "modified": true
+    },
+    {
+      "source": "gail/gail/validation_lunar_lander.py",
+      "destination": "imitation_learning/validation_lunar_lander.py",
+      "source_sha256": "35e703d1607030597a76304dcdcb49c0a5165d6a865b61368afbc90d4967f49c",
+      "packaged_sha256": "0c26f6d306793d8b65dafcc19b50f7c27f97c86f18b001346dd0d67525058c5e",
+      "modified": true
+    },
+    {
+      "source": "gail/gail/validation_pendulum.py",
+      "destination": "imitation_learning/validation_pendulum.py",
+      "source_sha256": "4e8a8ca5c4b9ee5f068b741c28e814accb68bcc3128c47f445fc21a314520406",
+      "packaged_sha256": "a2526a31f6033c2dee108efcccfd8583fa8044b2386ea6115b443a6b384979a3",
+      "modified": true
+    },
+    {
+      "source": "gail/gail/visualize.py",
+      "destination": "imitation_learning/visualize.py",
+      "source_sha256": "bcd348353da9a076864f86bf8fcf158022994dcf8aee9dc9d884aec191c5c5d2",
+      "packaged_sha256": "b61324b285947346cf4cbd907bacfbc562abe24899b71fa99dc78a5b8a24f351",
+      "modified": true
+    },
+    {
+      "source": "gail-pytorch-main/.gitignore",
+      "destination": "reference/gail-baseline/.gitignore",
+      "source_sha256": "e8f43a6260389a6a2e6fbbe23225644a197a4b567420169b6de31c2fa1f93433",
+      "packaged_sha256": "e8f43a6260389a6a2e6fbbe23225644a197a4b567420169b6de31c2fa1f93433",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/LICENSE",
+      "destination": "reference/gail-baseline/LICENSE",
+      "source_sha256": "e3ea402ee1abc0c50746d9e1c448a770e2d4f7a2317bdafd421fb92449878c2e",
+      "packaged_sha256": "e3ea402ee1abc0c50746d9e1c448a770e2d4f7a2317bdafd421fb92449878c2e",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/README.md",
+      "destination": "reference/gail-baseline/README.md",
+      "source_sha256": "2c2bf8c38474183f58bc41735a92a1573c022cf176195d8143b192f787eccf68",
+      "packaged_sha256": "2c2bf8c38474183f58bc41735a92a1573c022cf176195d8143b192f787eccf68",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/assets/img/README/README_2021-02-23-23-47-07.png",
+      "destination": "reference/gail-baseline/assets/img/README/README_2021-02-23-23-47-07.png",
+      "source_sha256": "26143c924fba68d0c1ef08a29f4e4394274e136bf738f523933d2181a135cde0",
+      "packaged_sha256": "26143c924fba68d0c1ef08a29f4e4394274e136bf738f523933d2181a135cde0",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/assets/img/README/README_2021-02-23-23-48-04.png",
+      "destination": "reference/gail-baseline/assets/img/README/README_2021-02-23-23-48-04.png",
+      "source_sha256": "679cea5dc2f4cb18994cbba3e27972559b3b40c875b9b8fd3e0cbfbe91f3406a",
+      "packaged_sha256": "679cea5dc2f4cb18994cbba3e27972559b3b40c875b9b8fd3e0cbfbe91f3406a",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/assets/img/README/README_2021-02-27-22-24-07.png",
+      "destination": "reference/gail-baseline/assets/img/README/README_2021-02-27-22-24-07.png",
+      "source_sha256": "8b98756a430c73dfcc4e463f82ce42e3655e396c009cf8c454250ed09028e40a",
+      "packaged_sha256": "8b98756a430c73dfcc4e463f82ce42e3655e396c009cf8c454250ed09028e40a",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/BipedalWalker-v3/discriminator.ckpt",
+      "destination": "reference/gail-baseline/ckpt/BipedalWalker-v3/discriminator.ckpt",
+      "source_sha256": "9d055d0dc333f9dfec474e4a1700090ed9a145a85fd637e494779a2ad7a96493",
+      "packaged_sha256": "9d055d0dc333f9dfec474e4a1700090ed9a145a85fd637e494779a2ad7a96493",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/BipedalWalker-v3/model_config.json",
+      "destination": "reference/gail-baseline/ckpt/BipedalWalker-v3/model_config.json",
+      "source_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "packaged_sha256": "37947473a49ad5bbb7f44b75a0daeac1e1614dd5c3e603b6f56af700a41891b1",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/BipedalWalker-v3/policy.ckpt",
+      "destination": "reference/gail-baseline/ckpt/BipedalWalker-v3/policy.ckpt",
+      "source_sha256": "13112e03ca015dbb22e347499bb8ef396ae01f441681fe96f091f7a61961723d",
+      "packaged_sha256": "13112e03ca015dbb22e347499bb8ef396ae01f441681fe96f091f7a61961723d",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/BipedalWalker-v3/results.pkl",
+      "destination": "reference/gail-baseline/ckpt/BipedalWalker-v3/results.pkl",
+      "source_sha256": "233613a5a27a6b098dc157f5cfa918004a42f88e72617c224662d0b375292397",
+      "packaged_sha256": "233613a5a27a6b098dc157f5cfa918004a42f88e72617c224662d0b375292397",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/BipedalWalker-v3/value.ckpt",
+      "destination": "reference/gail-baseline/ckpt/BipedalWalker-v3/value.ckpt",
+      "source_sha256": "db1b3440a75f8e20fddf43f3921cea58ed94d4d3d105b7fd5204244ff72a24af",
+      "packaged_sha256": "db1b3440a75f8e20fddf43f3921cea58ed94d4d3d105b7fd5204244ff72a24af",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/CartPole-v1/discriminator.ckpt",
+      "destination": "reference/gail-baseline/ckpt/CartPole-v1/discriminator.ckpt",
+      "source_sha256": "2ad900567b06a4f27b95f79a4138a1c755221e9c16e64e64a23f32f1f7e4d02f",
+      "packaged_sha256": "2ad900567b06a4f27b95f79a4138a1c755221e9c16e64e64a23f32f1f7e4d02f",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/CartPole-v1/model_config.json",
+      "destination": "reference/gail-baseline/ckpt/CartPole-v1/model_config.json",
+      "source_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "packaged_sha256": "ba948b66dadd43867fd05171caf434823238c284f6d146160d92e0e924dcd199",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/CartPole-v1/policy.ckpt",
+      "destination": "reference/gail-baseline/ckpt/CartPole-v1/policy.ckpt",
+      "source_sha256": "6f12f5d373093edaea37b60e58655f5b290f823d30398db26ddf24b789874997",
+      "packaged_sha256": "6f12f5d373093edaea37b60e58655f5b290f823d30398db26ddf24b789874997",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/CartPole-v1/results.pkl",
+      "destination": "reference/gail-baseline/ckpt/CartPole-v1/results.pkl",
+      "source_sha256": "1b1b6e00253bc0ad6028b8eb5f70971a8054bb4ddd0df6eb36e5fbcc6efa681e",
+      "packaged_sha256": "1b1b6e00253bc0ad6028b8eb5f70971a8054bb4ddd0df6eb36e5fbcc6efa681e",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/CartPole-v1/value.ckpt",
+      "destination": "reference/gail-baseline/ckpt/CartPole-v1/value.ckpt",
+      "source_sha256": "daec000659d65b815745c92ad4fd2edbd4d6ac01499e3333585a5aa8024a0e0a",
+      "packaged_sha256": "daec000659d65b815745c92ad4fd2edbd4d6ac01499e3333585a5aa8024a0e0a",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/Pendulum-v0/discriminator.ckpt",
+      "destination": "reference/gail-baseline/ckpt/Pendulum-v0/discriminator.ckpt",
+      "source_sha256": "58d91389eb4713c839d12dea35e77271ef242724c1a67854611f94c9fa62b864",
+      "packaged_sha256": "58d91389eb4713c839d12dea35e77271ef242724c1a67854611f94c9fa62b864",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/Pendulum-v0/model_config.json",
+      "destination": "reference/gail-baseline/ckpt/Pendulum-v0/model_config.json",
+      "source_sha256": "d3d55998fcef9c81ccd2015025c478563978eb5f3a3c13ada5e1bdb3afef69a6",
+      "packaged_sha256": "d3d55998fcef9c81ccd2015025c478563978eb5f3a3c13ada5e1bdb3afef69a6",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/Pendulum-v0/policy.ckpt",
+      "destination": "reference/gail-baseline/ckpt/Pendulum-v0/policy.ckpt",
+      "source_sha256": "45d72548019cc8f2ba85a367640c907340a4dcdaa29778d5745d0b1840024bcf",
+      "packaged_sha256": "45d72548019cc8f2ba85a367640c907340a4dcdaa29778d5745d0b1840024bcf",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/Pendulum-v0/results.pkl",
+      "destination": "reference/gail-baseline/ckpt/Pendulum-v0/results.pkl",
+      "source_sha256": "b70402c501b975a16810aec9498f7e0053d4a089fd5304a30fbb0a43ff493bc6",
+      "packaged_sha256": "b70402c501b975a16810aec9498f7e0053d4a089fd5304a30fbb0a43ff493bc6",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/ckpt/Pendulum-v0/value.ckpt",
+      "destination": "reference/gail-baseline/ckpt/Pendulum-v0/value.ckpt",
+      "source_sha256": "c9e5e27006114c3ef5e32db829e08352bb5f17a07aae32bf518d1d6d1f3b57a6",
+      "packaged_sha256": "c9e5e27006114c3ef5e32db829e08352bb5f17a07aae32bf518d1d6d1f3b57a6",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/config.json",
+      "destination": "reference/gail-baseline/config.json",
+      "source_sha256": "f1f83f6995e80bd8380b281d33f1d2da97ad4299e33b4d866b4109fb37d0a546",
+      "packaged_sha256": "f1f83f6995e80bd8380b281d33f1d2da97ad4299e33b4d866b4109fb37d0a546",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/experts/BipedalWalker-v3/model_config.json",
+      "destination": "reference/gail-baseline/experts/BipedalWalker-v3/model_config.json",
+      "source_sha256": "8522621ec88542b478da62e3e47467b4678a29af77c4d21b5c3809b5cd0704eb",
+      "packaged_sha256": "8522621ec88542b478da62e3e47467b4678a29af77c4d21b5c3809b5cd0704eb",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/experts/BipedalWalker-v3/policy.ckpt",
+      "destination": "reference/gail-baseline/experts/BipedalWalker-v3/policy.ckpt",
+      "source_sha256": "1a28adfa9b3612ea54d6e0da68d54a9691ffab2e84fdd62e2732985051c24094",
+      "packaged_sha256": "1a28adfa9b3612ea54d6e0da68d54a9691ffab2e84fdd62e2732985051c24094",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/experts/CartPole-v1/model_config.json",
+      "destination": "reference/gail-baseline/experts/CartPole-v1/model_config.json",
+      "source_sha256": "243d3754cbcd3643c9e9c7dfc5a0d9c02f37f7c11edf1dcee68045b51bf087dc",
+      "packaged_sha256": "243d3754cbcd3643c9e9c7dfc5a0d9c02f37f7c11edf1dcee68045b51bf087dc",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/experts/CartPole-v1/policy.ckpt",
+      "destination": "reference/gail-baseline/experts/CartPole-v1/policy.ckpt",
+      "source_sha256": "d555e14a2ec60de581340c0286d6de1c8cf5e1b83611fc341886567e9e4fac3f",
+      "packaged_sha256": "d555e14a2ec60de581340c0286d6de1c8cf5e1b83611fc341886567e9e4fac3f",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/experts/Pendulum-v0/model_config.json",
+      "destination": "reference/gail-baseline/experts/Pendulum-v0/model_config.json",
+      "source_sha256": "48eecc2a75875369dea67a7d6b395122c0a5572755ec4d96d17c031bbc4077a5",
+      "packaged_sha256": "48eecc2a75875369dea67a7d6b395122c0a5572755ec4d96d17c031bbc4077a5",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/experts/Pendulum-v0/policy.ckpt",
+      "destination": "reference/gail-baseline/experts/Pendulum-v0/policy.ckpt",
+      "source_sha256": "c61526d54eeb416eb815dd3b9e996433a4ee524214b8edb18524d55b8fe70bca",
+      "packaged_sha256": "c61526d54eeb416eb815dd3b9e996433a4ee524214b8edb18524d55b8fe70bca",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/models/gail.py",
+      "destination": "reference/gail-baseline/models/gail.py",
+      "source_sha256": "64642e78e23c7ef7d1ed6eca7d4ad6bc30876b9602f05e457c9042d0354ecfa1",
+      "packaged_sha256": "64642e78e23c7ef7d1ed6eca7d4ad6bc30876b9602f05e457c9042d0354ecfa1",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/models/nets.py",
+      "destination": "reference/gail-baseline/models/nets.py",
+      "source_sha256": "6696eba217696b2df4febac0660eddc6941749b373f153cb52c5ed6950fb4781",
+      "packaged_sha256": "6696eba217696b2df4febac0660eddc6941749b373f153cb52c5ed6950fb4781",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/requirements.txt",
+      "destination": "reference/gail-baseline/requirements.txt",
+      "source_sha256": "68ff7321c3fcef34c2c71749ebe238a45e35567a7e5c461a6d50326e0c1adb9f",
+      "packaged_sha256": "68ff7321c3fcef34c2c71749ebe238a45e35567a7e5c461a6d50326e0c1adb9f",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/train.py",
+      "destination": "reference/gail-baseline/train.py",
+      "source_sha256": "633f2956c41a169804069796337a3f0aebac8e02dbd5bb0b9148abd1c2384143",
+      "packaged_sha256": "633f2956c41a169804069796337a3f0aebac8e02dbd5bb0b9148abd1c2384143",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/utils/funcs.py",
+      "destination": "reference/gail-baseline/utils/funcs.py",
+      "source_sha256": "ff298626b81998db752194f20dffdfad85a36916910c7ebf6e1a161662b30946",
+      "packaged_sha256": "ff298626b81998db752194f20dffdfad85a36916910c7ebf6e1a161662b30946",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/validation.py",
+      "destination": "reference/gail-baseline/validation.py",
+      "source_sha256": "d5f97d017a986d310e6c987a485570f923c6d0785ecff31e529e5e49ef7501e3",
+      "packaged_sha256": "d5f97d017a986d310e6c987a485570f923c6d0785ecff31e529e5e49ef7501e3",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/validation_bipedal_walker.py",
+      "destination": "reference/gail-baseline/validation_bipedal_walker.py",
+      "source_sha256": "b6f9d9b9bd53fd117db30b349a7dc488324e9a7b0b679471d71b7fc11341b12d",
+      "packaged_sha256": "b6f9d9b9bd53fd117db30b349a7dc488324e9a7b0b679471d71b7fc11341b12d",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/validation_pendulum.py",
+      "destination": "reference/gail-baseline/validation_pendulum.py",
+      "source_sha256": "df677ccc6e9b030fa0520c973c4c00b9ac31a776428919aad49867aecb6a45db",
+      "packaged_sha256": "df677ccc6e9b030fa0520c973c4c00b9ac31a776428919aad49867aecb6a45db",
+      "modified": false
+    },
+    {
+      "source": "validate_gym/validation.py",
+      "destination": "reference/standalone-validation/validation.py",
+      "source_sha256": "e337afb7502db4ecf5f67ef486d9d341e8c6a3200cfed4a9e43d581b1f8dcce0",
+      "packaged_sha256": "e337afb7502db4ecf5f67ef486d9d341e8c6a3200cfed4a9e43d581b1f8dcce0",
+      "modified": false
+    },
+    {
+      "source": "Νευροασαφής.pdf",
+      "destination": "docs/report.pdf",
+      "source_sha256": "69c6447c606faf80a1ab48223e2c7477c450f80d33f15ed666a5e07b14359d68",
+      "packaged_sha256": "69c6447c606faf80a1ab48223e2c7477c450f80d33f15ed666a5e07b14359d68",
+      "modified": false
+    },
+    {
+      "source": "gail-pytorch-main/LICENSE",
+      "destination": "third_party/GAIL_LICENSE",
+      "source_sha256": "e3ea402ee1abc0c50746d9e1c448a770e2d4f7a2317bdafd421fb92449878c2e",
+      "packaged_sha256": "e3ea402ee1abc0c50746d9e1c448a770e2d4f7a2317bdafd421fb92449878c2e",
+      "modified": false
+    }
+  ]
+}
