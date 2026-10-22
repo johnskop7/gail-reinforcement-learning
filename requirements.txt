@@ -1,0 +1,7 @@
+# Import-level dependencies, not a tested historical lockfile.
+# See docs/setup.md before choosing Python/Gym/PyTorch versions.
+numpy
+matplotlib
+torch
+gym
+jupyter
