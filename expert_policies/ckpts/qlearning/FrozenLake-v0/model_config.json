@@ -1,0 +1,11 @@
+{
+    "train_config": {
+        "lr": 0.1,
+        "discount": 0.99,
+        "epsilon": 1.0,
+        "epsilon_decay": 0.999,
+        "epsilon_min": 0.01,
+        "num_episodes": 100000,
+        "max_steps": 100
+    }
+}

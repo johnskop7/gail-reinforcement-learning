@@ -1,0 +1,11 @@
+{
+    "train_config": {
+        "lr": 0.001,
+        "num_iters": 500,
+        "num_steps_per_iter": 2000,
+        "horizon": null,
+        "discount": 0.99,
+        "normalize_return": true,
+        "use_baseline": true
+    }
+}
